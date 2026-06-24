@@ -37,8 +37,8 @@ Como fundador da **Lif3 digital media**, conecto engenharia de software com estr
 
 * **LinkedIn:** [andersonchiesa](https://www.linkedin.com/in/achiesa12/) 
 * **E-mail:** lif3digitalmedia@gmail.com
-* **Portfólio:** [Andchiesa] (https://andchiesaportfolio.netlify.app/)
-* **Website:** [lif3digital.com](https://www.lif3digital.com.br)
+* **Portfólio:** (https://andchiesaportfolio.netlify.app/)
+* **Website:** (https://www.lif3digitalmedia.com.br)
 
 <p align="center">
   <img src="Lif3Logo.png" alt="Lif3 Digital Media" height="60" />
