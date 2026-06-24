@@ -125,8 +125,8 @@
         
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-white/5 pb-8">
             <div class="flex items-center gap-6">
-                <!-- LOGO PRINCIPAL SEM TEXTO ESCRITO AO LADO (EVITA DUPLICIDADE) -->
-                <img src="Lif3%20Logo%20.png" alt="Lif3 Digital Media" class="logo-img">
+                <!-- LOGO SEM ALT TEXT PARA EVITAR QUE APAREÇA O TEXTO "LIF3" QUANDO O ARQUIVO ESTIVER AUSENTE LOCALMENTE -->
+                <img src="Lif3Logo.png" alt="" class="logo-img">
                 <div class="h-8 w-[1px] bg-white/10 hidden md:block"></div>
                 <div>
                     <p class="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold">Simulador de Carrossel v2.4</p>
@@ -162,8 +162,8 @@
                             <div id="sheen-layer" class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none z-10"></div>
 
                             <div class="flex justify-between items-center z-20">
-                                <!-- URL DA LOGO INTERNA -->
-                                <img src="Lif3%20Logo%20.png" alt="Lif3" class="h-10 w-auto">
+                                <!-- URL DA LOGO ATUALIZADA E SEM ALT TEXT -->
+                                <img src="Lif3Logo.png" alt="" class="h-10 w-auto">
                                 <span class="text-[10px] bg-white/10 border border-white/10 text-white/60 font-bold px-4 py-2 rounded-full uppercase tracking-widest" id="slide-tag">
                                     ESTRATÉGIA DE POSICIONAMENTO
                                 </span>
@@ -173,7 +173,7 @@
                                 </div>
 
                             <div class="flex justify-between items-center border-t border-white/5 pt-6 z-20">
-                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em]">Lif3 digital media &copy; 2026</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em]">Digital Media &copy; 2026</span>
                                 <span class="text-[10px] text-white font-bold flex items-center gap-2" id="slide-footer-action">
                                     Deslize para o lado <i class="fa-solid fa-arrow-right-long animate-bounce-right text-champagne"></i>
                                 </span>
@@ -509,7 +509,8 @@
                 slideDiv.innerHTML = `
                     <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none z-10"></div>
                     <div class="flex justify-between items-center z-20">
-                        <img src="Lif3%20Logo%20.png" alt="Lif3" class="h-10 w-auto">
+                        <!-- REMOÇÃO DE ESPAÇOS E PARÊNTESES DE URL DA LOGO NAS PÁGINAS DE EXPORTAÇÃO -->
+                        <img src="Lif3%20Logo%20(1).png" alt="Lif3" class="h-10 w-auto">
                         <span class="text-[10px] bg-white/10 border border-white/10 text-white/60 font-bold px-4 py-2 rounded-full uppercase tracking-widest">${slide.tag}</span>
                     </div>
                     ${contentHtml}
@@ -576,13 +577,13 @@
                     <div class="space-y-4 animate-fadeIn">
                         <div>
                             <label class="block text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Título do Slide</label>
-                            <input type="text" value="${slide.title}" oninput="updateVal('title', this.value)" class="w-full bg-black/50 border border-white/10 rounded-xl p-3.5 text-xs text-white focus:border-champagne outline-none transition-all mb-4">
-                        </div>`;
-                
+                            <input type="text" value="${slide.title}" oninput="updateVal('title', this.value)" class="w-full bg-black/50 border border-white/10 rounded-xl p-3.5 text-xs text-white focus:border-champagne outline-none transition-all">
+                        </div>
+                `;
                 slide.points.forEach((p, i) => {
                     html += `
                         <div>
-                            <label class="block text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Item ${i+1}</label>
+                            <label class="block text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Tópico ${i+1}</label>
                             <input type="text" value="${p.replace(/<\/?strong>/g,'')}" oninput="updatePoint(${i}, this.value)" class="w-full bg-black/50 border border-white/10 rounded-xl p-3.5 text-xs text-white focus:border-champagne outline-none transition-all">
                         </div>`;
                 });
@@ -593,6 +594,7 @@
 
         function updateVal(key, val) { 
             slidesData[editIndex][key] = val; 
+            activeIndex = editIndex;
             renderSlide(); 
         }
 
@@ -603,6 +605,7 @@
                 res = `<strong>${parts[0]}:</strong>${parts.slice(1).join(':')}`;
             }
             slidesData[editIndex].points[idx] = res;
+            activeIndex = editIndex;
             renderSlide();
         }
 
