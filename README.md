@@ -1,6 +1,6 @@
 # Olá, eu sou o Anderson Chiesa 👋
 
-Desenvolvedor e Analista de Processos focado em **Automação Inteligente (RPA)**, **Inteligência Artificial** e **Eficiência Operacional**. Traduzo desafios complexos de negócios e fluxos manuais em sistemas escaláveis, performáticos e de alta conversão.
+Desenvolvedor e Analista de Processos focado em **Inteligência Artificial** e **Eficiência Operacional**. Traduzo desafios complexos de negócios e fluxos manuais em sistemas escaláveis, performáticos e de alta conversão.
 
 Como fundador da **Lif3 digital media**, conecto engenharia de software com estratégias digitais avançadas para criar ferramentas que geram impacto real.
 
@@ -8,7 +8,6 @@ Como fundador da **Lif3 digital media**, conecto engenharia de software com estr
 
 ## 🚀 No que estou focado atualmente:
 
-* 🤖 **Process Automation & RPA:** Construção de fluxos de trabalho autônomos integrando Python, n8n e Google Apps Script para otimizar ecossistemas operacionais e logísticos.
 * 📈 **Data Visualization:** Criação de dashboards de performance e indicadores em Looker Studio, Excel avançado e Google Sheets.
 * 💻 **Web Development:** Interfaces modernas, minimalistas (Apple-style) e interativas utilizando React, Tailwind CSS e GSAP, com deploy na Vercel e Netlify.
 * 🧠 **AI-Driven Tools:** Engenharia de prompt aplicada, assistentes virtuais automatizados e ferramentas de apoio para infoprodutos e atração de audiência.
@@ -36,8 +35,9 @@ Como fundador da **Lif3 digital media**, conecto engenharia de software com estr
 
 ## 📬 Vamos nos conectar?
 
-* **LinkedIn:** [andersonchiesa](https://www.linkedin.com/in/achiesa12/) _(Substitua pelo seu link real)_
-* **E-mail:** lif3digitaledia@gmail.com
+* **LinkedIn:** [andersonchiesa](https://www.linkedin.com/in/achiesa12/) 
+* **E-mail:** lif3digitalmedia@gmail.com
+* **Portfólio:** [Andchiesa] (https://andchiesaportfolio.netlify.app/)
 * **Website:** [lif3digital.com](https://www.lif3digital.com.br)
 
 <p align="center">
