@@ -36,9 +36,9 @@ Como fundador da **Lif3 digital media**, conecto engenharia de software com estr
 
 ## 📬 Vamos nos conectar?
 
-* **LinkedIn:** [andersonchiesa](https://www.linkedin.com/in/andersonchiesa/) _(Substitua pelo seu link real)_
-* **E-mail:** contato@lif3digital.com
-* **Website:** [lif3digital.com](https://www.lif3digital.com) _(Substitua pelo seu link real)_
+* **LinkedIn:** [andersonchiesa](https://www.linkedin.com/in/achiesa12/) _(Substitua pelo seu link real)_
+* **E-mail:** lif3digitaledia@gmail.com
+* **Website:** [lif3digital.com](https://www.lif3digital.com.br)
 
 <p align="center">
   <img src="Lif3Logo.png" alt="Lif3 Digital Media" height="60" />
