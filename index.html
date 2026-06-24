@@ -509,15 +509,15 @@
                 slideDiv.innerHTML = `
                     <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none z-10"></div>
                     <div class="flex justify-between items-center z-20">
-                        <!-- REMOÇÃO DE ESPAÇOS E PARÊNTESES DE URL DA LOGO NAS PÁGINAS DE EXPORTAÇÃO -->
-                        <img src="Lif3%20Logo%20(1).png" alt="Lif3" class="h-10 w-auto">
+                        <!-- NOME DA LOGO ATUALIZADO CORRETAMENTE NA IMPRESSÃO PARA EVITAR IMAGEM QUEBRADA -->
+                        <img src="Lif3Logo.png" alt="" class="h-10 w-auto">
                         <span class="text-[10px] bg-white/10 border border-white/10 text-white/60 font-bold px-4 py-2 rounded-full uppercase tracking-widest">${slide.tag}</span>
                     </div>
                     ${contentHtml}
                     <div class="flex justify-between items-center border-t border-white/5 pt-6 z-20">
                         <span class="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em]">Lif3 digital media &copy; 2026</span>
                         <span class="text-[10px] text-white font-bold flex items-center gap-2">
-                            ${index === slidesData.length - 1 ? slide.footer + ' <i class="fa-solid fa-check-double text-champagne ml-2"></i>' : slide.footer + ' <i class="fa-solid fa-arrow-right-long text-champagne ml-2"></i>'}
+                            ${index === slidesData.length - 1 ? slide.footer + ' <i class="fa-solid fa-check-double text-champagne ml-2"></i>' : slide.footer + ' <i class="fa-solid fa-arrow-right-long animate-bounce-right text-champagne ml-2"></i>'}
                         </span>
                     </div>
                 `;
